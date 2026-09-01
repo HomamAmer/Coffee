@@ -1,0 +1,205 @@
+html {
+    font-size: 24px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(245, 222, 179);
+    transition: background-color 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark-mode {
+    background-color: rgb(40, 20, 10);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode a,
+body.dark-mode td {
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+/* زر تغيير المود */
+header button {
+    padding: 12px 25px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    background-color: rgb(100, 50, 10);
+    color: white;
+    border: 3px solid black;
+}
+
+header button:hover {
+    transform: scale(1.05);
+}
+
+body.dark-mode header button {
+    background-color: rgb(245, 222, 179);
+    color: black;
+    border: 3px solid white;
+}
+
+.links {
+    display: flex;
+    margin-left: 50px;
+}
+
+/* الروابط وتأثير الحواف (Stroke) */
+a {
+    padding-inline: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+body.dark-mode a {
+    color: white;
+}
+
+body.dark-mode a:hover {
+    color: black;
+    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 75px;
+    color: black;
+    margin: 1px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: black;
+    font-style: italic;
+    text-align: center;
+}
+
+/* الجداول (المنيو والمكونات) */
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 75%;
+    max-width: 1100px;
+}
+
+th, td {
+    border: 5px solid black;
+    padding: 15px 20px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 26px;
+}
+
+body.dark-mode th,
+body.dark-mode td {
+    border: 5px solid white;
+}
+
+th {
+    color: white;
+    background-color: rgb(100, 50, 10);
+}
+
+.main_tr {
+    background-color: black;
+}
+
+/* ألوان الصفوف الفرعية في المنيو */
+.tr_d {
+    background-color: rgb(225, 195, 145);
+}
+
+body.dark-mode .tr_d {
+    background-color: rgb(65, 35, 15);
+}
+
+/* توحيد ألوان عناوين جدول المكونات OCI مع ألوان tr_d تماماً */
+.OCI th {
+    background-color: rgb(225, 195, 145);
+    color: black;
+}
+
+body.dark-mode .OCI th {
+    background-color: rgb(65, 35, 15);
+    color: white;
+}
+
+.coffee_beans {
+    margin-left: 1px;
+}
+
+.coffee {
+    width: 80px;
+    height: auto;
+}
+
+.img {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.media {
+    width: 40px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.sub_hr {
+    border-color: white;
+    opacity: 0.5;
+}
+
+.main_hr {
+    border-color: black;
+}
+
+.H, .M, .OCI {
+    margin-bottom: 100px;
+}
+
+.H {
+    margin-top: 100px;
+}
+
+.contact-div {
+    display: flex;
+    justify-content: center;
+}
+
+.HomeContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 50px;
+}
+
+.CoffeeShopImage {
+    width: 500px;
+    height: auto;
+    border-radius: 180px;
+    border: 3px solid black;
+}
